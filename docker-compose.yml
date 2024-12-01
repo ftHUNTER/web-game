@@ -1,0 +1,28 @@
+services:
+  frontend:
+    build: ./front/docker
+    container_name: front
+    ports:
+      - "8080:8080"
+    networks:
+      - mynetwork
+    depends_on:
+      - django 
+    volumes:
+      - ./front/content:/var/www/html
+
+  django:
+    build: ./django/docker
+    container_name: django
+    ports:
+      - "8000:8000"
+    networks:
+      - mynetwork
+    volumes:
+      - ./django/content:/var/www/html
+    environment:
+      - DJANGO_ALLOWED_HOSTS=django
+
+networks:
+  mynetwork:
+    driver: bridge

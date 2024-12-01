@@ -88,9 +88,9 @@ class ChatConsumer(AsyncWebsocketConsumer):
                     "bally" : self.info["ball"]["y"] 
                 }
                 )
-            if game["TITLE"] == "info":
+            elif game["TITLE"] == "info":
                 self.info = game
-            if game["TITLE"] == "move_player":
+            elif game["TITLE"] == "move_player":
                 if "down" == game["player_direction"]:
                     step = 5
                 else :
@@ -123,7 +123,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
                     "position" : position,
                 }
                 )
-                print("-/-/-/-/-/-/", self.info["ball"]["y"], self.info["player2"]["y"])
+                # print("-/-/-/-/-/-/", self.info["ball"]["y"], self.info["player2"]["y"])
                 
     
     async def move_player(self, event):

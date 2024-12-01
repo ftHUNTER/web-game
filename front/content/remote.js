@@ -1,5 +1,5 @@
 group_name = "";
-const chatSocket = new WebSocket('ws://' + 'localhost:8000' + '/ws/chat/');
+const chatSocket = new WebSocket('ws://' + 'localhost:8000' + '/ws/game/');
 const canvas = document.getElementById("Game");
 const context = canvas.getContext('2d');
 
