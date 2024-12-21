@@ -89,7 +89,7 @@ function MovePlayer() {
     if (keys.up == true && player.y + py > player.y - (canvas.height / 2) + paddleHeight / 2)
     {
         // py -= 1;
-        const data = { message: "py-", game: };
+        const data = { message: "py-"};
         chatSocket.send(JSON.stringify(data));
     }
     if (keys.down == true && player.y + py < player.y + (canvas.height / 2) - paddleHeight / 2)

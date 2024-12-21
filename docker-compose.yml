@@ -22,6 +22,7 @@ services:
       - ./django/content:/var/www/html
     environment:
       - DJANGO_ALLOWED_HOSTS=django
+      - PYTHONUNBUFFERED=1
 
 networks:
   mynetwork:

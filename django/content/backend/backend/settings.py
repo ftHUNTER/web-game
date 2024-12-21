@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#kcx65+q=kz!4roje-(v^&m9a92m9=!ow#q%mbu9nhon0udlhc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -34,7 +34,7 @@ CORE_ALLOW_ALL_ORIGINS = True
 INSTALLED_APPS = [
     'daphne',
     'channels',
-    'chat',
+    'game',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

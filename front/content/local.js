@@ -8,7 +8,7 @@ const paddleWidth = 5, paddleHeight = 70;
 const player = { x: 0, y: canvas.height / 2 - paddleHeight / 2, width: paddleWidth, height: paddleHeight, color: '#FFF' };
 const ai = { x: canvas.width - paddleWidth, y: canvas.height / 2 - paddleHeight / 2, width: paddleWidth, height: paddleHeight, color: '#FFF' };
 
-const ball = { x: canvas.width / 2, y: canvas.height / 2, radius: 8, speed: 1, velocityX: 4, velocityY: 4, color: 'withe' };
+const ball = { x: canvas.width / 2, y: canvas.height / 2, radius: 8, speed: 6, velocityX: 4, velocityY: 4, color: 'withe' };
 xmove = 0;
 ymove = 0;
 
